@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HistorySite | Welcome</title>
+		<link rel= "stylesheet" href= ".\css\style.css">
+	</head>
+	
+	<body>
+		<header>
+			<div class = "container">
+				<div class="branding">
+					<h1><span class = "highlight">History</span>Site</h1>
+				</div>
+					<nav>
+						<ul>
+							<li><a href="Home.html"><b>Home</b></a></li>
+							<li><a href="History.html"><b>History</b></a></li>
+							<li class = "current"><a href="Contact.html"><b>Contact<b></a></li>	
+						</ul>
+					</nav>		
+			</div>
+		</header>
+		
+		<section id = "showcase">
+			<div class = "container">
+				<h1><b>A little bit of knowledge about the Roman history</b></h1>
+				<p>In this site you will learn some things about the Roman Empire</p>
+			</div>
+		</section>
+		
+		<section id = "newsletter">
+			<div class = "container">
+				<h1>Subscribe to our Newsletter</h1>
+					<form>
+						<input type="email" placeholder ="Enter Email" id = "subscribe">
+						<button type = "submit" class = "button1">Subscribe</button>
+					</form>
+			</div>
+		</section>
+		
+		<section id = "sidebar">
+			<div class = "dark">
+				<h3>Feel free to contact us for any inquiries!</h3>
+			</div>
+				<form class = "form">
+					<div>
+						<label>Name *</label></br>
+						<input type = "text" placeholder = "Enter Name" id= "name">
+					</div>
+					<div>
+						<label>Email *</label></br>
+						<input type = "email" placeholder = "Enter Email" id = "email">
+					</div>
+					<div>
+						<label>Message *</label></br>
+						<textarea class = "textarea" placeholder = "Type your message" id = "message"></textarea>
+					</div>
+					<div>
+						<Button class = "button2" type = "submit" onclick ="CheckValue()")>Submit</Button>
+					</div>
+					<script>
+						function CheckValue()
+						{
+							var name= document.getElementById('name');
+							var email= document.getElementById('email');
+							var message= document.getElementById('message');
+							if (name.value != "" && email.value != "" && message.value != "")
+							{
+								alert ('Thank you for submitting our message!');
+							}
+							else
+							{
+								alert ('All fields are required!');
+							}	
+						}
+					</script>
+				</form>
+				<br/>
+				<div class = "message">
+					<h2>All fields with (*) must be filled</h2>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<p>Thenia Web Design, Copyright &copy 2018</p>
+		</footer>
+	</body>
+</html>
